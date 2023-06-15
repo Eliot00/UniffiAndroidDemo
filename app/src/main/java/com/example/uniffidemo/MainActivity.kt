@@ -28,6 +28,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.uniffidemo.ui.theme.UniffiDemoTheme
 import uniffi.Hello.rustGreeting
+import uniffi.Hello.rustRead
 
 class MainActivity : ComponentActivity() {
 
@@ -119,8 +120,15 @@ fun MainPage(toSettingPage: () -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun SettingPage() {
+    var foo by remember {
+        mutableStateOf("")
+    }
+
     Column() {
-        Text(text = "TODO")
+        Text(text = foo)
+        Button(onClick = { foo = rustRead() }) {
+            Text("读取")
+        }
     }
 }
 
