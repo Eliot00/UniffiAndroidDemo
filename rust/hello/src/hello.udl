@@ -1,4 +1,5 @@
 namespace Hello {
     string rust_greeting(string name);
     string rust_read();
+    void rust_write();
 };

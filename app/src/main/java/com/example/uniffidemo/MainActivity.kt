@@ -29,6 +29,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.uniffidemo.ui.theme.UniffiDemoTheme
 import uniffi.Hello.rustGreeting
 import uniffi.Hello.rustRead
+import uniffi.Hello.rustWrite
 
 class MainActivity : ComponentActivity() {
 
@@ -128,6 +129,9 @@ fun SettingPage() {
         Text(text = foo)
         Button(onClick = { foo = rustRead() }) {
             Text("读取")
+        }
+        Button(onClick = { rustWrite() }) {
+            Text(text = "写入")
         }
     }
 }
