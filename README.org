@@ -1,5 +1,5 @@
-*  TODO
+* 待办
 
-- [x] hello world
-- [x] 文件IO
-- [ ] nix打包
+- DONE hello world
+- DONE 文件IO
+- TODO nix打包
