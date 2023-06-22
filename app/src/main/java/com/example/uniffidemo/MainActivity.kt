@@ -27,9 +27,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.uniffidemo.ui.theme.UniffiDemoTheme
-import uniffi.Hello.rustGreeting
-import uniffi.Hello.rustRead
-import uniffi.Hello.rustWrite
+import com.example.uniffidemo.uniffi.rustGreeting
+import com.example.uniffidemo.uniffi.rustRead
+import com.example.uniffidemo.uniffi.rustWrite
 
 class MainActivity : ComponentActivity() {
 

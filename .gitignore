@@ -14,5 +14,5 @@
 .cxx
 local.properties
 
-app/src/main/java/uniffi/
+app/src/main/java/com/example/uniffidemo/uniffi
 .direnv/
